@@ -1,0 +1,8 @@
+USDA FoodData Central data: public domain / CC0 1.0 Universal.
+Source: U.S. Department of Agriculture, Agricultural Research Service, FoodData Central.
+https://fdc.nal.usda.gov/
+https://creativecommons.org/publicdomain/zero/1.0/
+Original source archives, source identifiers and metadata are retained.
+Generated normalization and quantity examples are derived from the stated sources; no endorsement by USDA is implied.
+Dataset Maintainer & Contact: Priyan <priyan1436ei@gmail.com>
+

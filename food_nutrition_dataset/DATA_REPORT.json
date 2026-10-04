@@ -1,0 +1,57 @@
+{
+  "food_records": 13588,
+  "distinct_normalized_names": 13389,
+  "source_types": {
+    "SR Legacy": 7793,
+    "Foundation": 363,
+    "Survey (FNDDS)": 5432
+  },
+  "valid_source_portions": 37025,
+  "nutrient_observations": 1012333,
+  "derived_quantity_examples": 163056,
+  "quantity_grid_grams": [
+    5,
+    10,
+    25,
+    50,
+    75,
+    100,
+    125,
+    150,
+    200,
+    250,
+    300,
+    500
+  ],
+  "complete_core_macro_records": 13535,
+  "missing_by_nutrient": {
+    "energy_kcal": 43,
+    "protein_g": 12,
+    "fat_g": 24,
+    "carbohydrate_g": 53,
+    "fiber_g": 741,
+    "sugars_g": 2014,
+    "saturated_fat_g": 602,
+    "sodium_mg": 115,
+    "cholesterol_mg": 675,
+    "calcium_mg": 98,
+    "iron_mg": 93,
+    "potassium_mg": 290,
+    "vitamin_c_mg": 714,
+    "water_g": 9
+  },
+  "splits": {
+    "train": 10780,
+    "test": 1378,
+    "validation": 1430
+  },
+  "quality_events": {
+    "nonpositive_or_missing_portion_weight_excluded": 1,
+    "null_or_non_object_record_skipped": 32
+  },
+  "validation": {
+    "selected_nutrients_match_source": true,
+    "no_split_group_overlap": true
+  },
+  "coverage": "USDA-centered; NOT all foods worldwide; origin/cuisine not inferred"
+}

@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this dataset or software in your research or projects, please cite it as below."
+type: dataset
+title: "Food Nutrition Dataset — Priyan Edition"
+authors:
+  - family-names: "A"
+    given-names: "Priyan"
+    email: "priyan1436ei@gmail.com"
+version: "1.0.0"
+date-released: 2026-10-04
+license: "CC0-1.0"
+keywords:
+  - nutrition-dataset
+  - usda-fooddata-central
+  - food-nutrition
+  - dietary-tracking
+  - machine-learning
+  - dataset

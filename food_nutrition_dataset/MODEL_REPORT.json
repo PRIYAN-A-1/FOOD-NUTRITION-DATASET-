@@ -1,0 +1,69 @@
+{
+  "task": "food_name_to_per_100g_macros_experimental",
+  "sklearn_version": "1.8.0",
+  "training_records": 10738,
+  "target_order": [
+    "energy_kcal_100g",
+    "protein_g_100g",
+    "fat_g_100g",
+    "carbohydrate_g_100g"
+  ],
+  "prediction_policy": "clip negative predictions to zero",
+  "split_policy": "identical normalized names and shared NDB ids grouped",
+  "limitations": [
+    "USDA-centered evaluation, not worldwide performance",
+    "Related recipes can remain across splits",
+    "Not validated on user-entered names, Tamil or food images",
+    "Predictions are estimates; exact source lookup is preferred"
+  ],
+  "validation": {
+    "records": 1422,
+    "metrics": {
+      "energy_kcal_100g": {
+        "mae": 57.242392827017255,
+        "rmse": 80.43145556351946,
+        "mean_predictor_mae": 131.22754354515777
+      },
+      "protein_g_100g": {
+        "mae": 2.988239081982104,
+        "rmse": 4.575076952830956,
+        "mean_predictor_mae": 7.8903797748653
+      },
+      "fat_g_100g": {
+        "mae": 4.834142426814351,
+        "rmse": 7.564533915370926,
+        "mean_predictor_mae": 9.629902702496686
+      },
+      "carbohydrate_g_100g": {
+        "mae": 7.709792806036786,
+        "rmse": 11.617995407185582,
+        "mean_predictor_mae": 19.23081989930733
+      }
+    }
+  },
+  "test": {
+    "records": 1375,
+    "metrics": {
+      "energy_kcal_100g": {
+        "mae": 55.41759094690473,
+        "rmse": 78.31983148873648,
+        "mean_predictor_mae": 121.59228844375961
+      },
+      "protein_g_100g": {
+        "mae": 2.9197621838228907,
+        "rmse": 4.9983696043408905,
+        "mean_predictor_mae": 7.854379789837287
+      },
+      "fat_g_100g": {
+        "mae": 4.704732675020151,
+        "rmse": 7.745082432337401,
+        "mean_predictor_mae": 8.888418426387187
+      },
+      "carbohydrate_g_100g": {
+        "mae": 7.448257466603669,
+        "rmse": 11.619946114852688,
+        "mean_predictor_mae": 18.645667224030184
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+6 calculation unit tests passed.
+Every selected wide-column nutrient matched its original USDA source value.
+All 163056 quantity rows verified for core nutrient scaling and split inheritance.
+All 37025 portion IDs are unique, positive and linked to valid foods.
+No split-group overlap across train/validation/test.
+ML baseline trained on 10738 complete training records; validation and test evaluated separately.
+Prediction CLI tested successfully.
+World coverage, clinical performance, photos, multilingual lookup and recipe-family-held-out performance are not established.

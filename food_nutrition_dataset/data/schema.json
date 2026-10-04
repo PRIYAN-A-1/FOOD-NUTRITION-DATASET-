@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Food Record Schema",
+  "description": "Schema for food records in the Food Nutrition Dataset",
+  "type": "object",
+  "properties": {
+    "food_id": {
+      "type": "string",
+      "pattern": "^usda:[0-9]+$",
+      "description": "Unique record primary key"
+    },
+    "fdc_id": {
+      "type": "integer",
+      "description": "USDA FoodData Central ID"
+    },
+    "name": {
+      "type": "string",
+      "description": "Normalized description of the food item"
+    },
+    "source_type": {
+      "type": "string",
+      "description": "USDA dataset source type"
+    },
+    "category": {
+      "type": ["string", "null"],
+      "description": "Food category description"
+    },
+    "basis_amount": {
+      "type": "number",
+      "default": 100,
+      "description": "Serving basis amount"
+    },
+    "basis_unit": {
+      "type": "string",
+      "default": "g",
+      "description": "Unit for nutritional values"
+    },
+    "energy_kcal_100g": {
+      "type": ["number", "null"],
+      "description": "Energy per 100g in kcal"
+    },
+    "protein_g_100g": {
+      "type": ["number", "null"],
+      "description": "Protein per 100g in grams"
+    },
+    "fat_g_100g": {
+      "type": ["number", "null"],
+      "description": "Fat per 100g in grams"
+    },
+    "carbohydrate_g_100g": {
+      "type": ["number", "null"],
+      "description": "Carbohydrate per 100g in grams"
+    },
+    "complete_core_macros": {
+      "type": "boolean",
+      "description": "True if all four core macro fields are non-null"
+    },
+    "split_group": {
+      "type": "string",
+      "description": "Group ID preventing data leakage across splits"
+    },
+    "split": {
+      "type": "string",
+      "enum": ["train", "validation", "test"],
+      "description": "Assigned dataset split"
+    }
+  },
+  "required": ["food_id", "fdc_id", "name", "source_type", "complete_core_macros", "split_group", "split"]
+}
